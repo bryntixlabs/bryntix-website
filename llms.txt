@@ -1,0 +1,11 @@
+# Bryntix Labs
+
+Bryntix Labs is a software agency that builds high-performance mobile applications, modern web platforms, exceptional UI/UX designs, and tailor-made AI solutions.
+
+## Core Services
+- Mobile App Development (Native Android)
+- Web Development & Modern Platforms
+- UI/UX Design
+- AI Solutions & Artificial Intelligence
+
+To learn more about our process, services, and how we can collaborate, please visit our main website at https://bryntixlabs.online.

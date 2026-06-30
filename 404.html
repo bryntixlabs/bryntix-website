@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Bryntix Labs</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .error-code {
+            font-family: 'Outfit', sans-serif;
+            font-size: 8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .error-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+        
+        .error-text {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin-bottom: 2.5rem;
+        }
+        
+        .home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 2rem;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .home-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Mouse-Following Glow Effect (assuming body background is dark in style.css) -->
+    <div id="bg-glow"></div>
+
+    <!-- Navigation Header -->
+    <header id="main-header" class="glass-nav">
+        <div class="container header-container">
+            <a href="/" class="logo-area">
+                <span class="logo-text">Bryntix <span class="accent-text">Labs</span></span>
+            </a>
+        </div>
+    </header>
+
+    <main class="error-container">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Page Not Found</h2>
+        <p class="error-text">Oops! The page you're looking for seems to have wandered off into the digital void. Let's get you back home.</p>
+        <a href="/" class="home-btn">
+            <i data-lucide="arrow-left"></i>
+            Back to Homepage
+        </a>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <!-- Note: If script.js has specific dependencies on elements not present in 404.html, it's safer not to include it, or you can include it if it's safe. I am omitting script.js here to prevent console errors from missing sections. -->
+</body>
+</html>
